@@ -1,0 +1,45 @@
+//Arithmetic Calculator
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double num1, num2;
+	char op;
+	
+	cout<<"Enter the first number"<<endl;
+	cin>>num1;;
+	cout<<"Enter Operator(+, -, /, *)"<<endl;
+	cin>>op;;
+	cout<<"Enter the second number"<<endl;
+	cin>>num2;
+	
+	
+	switch(op){
+		
+		case '+':
+        cout << num1 + num2;
+        break;
+ 
+    // If the user enter -
+    case '-':
+        cout << num1 - num2;
+        break;
+ 
+    // If the user enter *
+    case '*':
+        cout << num1 * num2;
+        break;
+ 
+    // If the user enter /
+    case '/':
+        cout << num1 / num2;
+        break;
+        
+        default:
+        	cout<<"Error! operator is not correct";
+	}
+	
+	return 0;
+}
